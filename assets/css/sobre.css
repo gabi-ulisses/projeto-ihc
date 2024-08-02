@@ -1,5 +1,5 @@
 
-/* Menu de da pagina introdução */
+/* Menu de da pagina sobre nós */
 
 nav{
     background-image: url("../img/fundo.png");
@@ -54,5 +54,25 @@ nav ul li a{
     vertical-align: middle;
 }
 
+/*Parte dos textos*/
 
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+#parte1, #parte2{
+    background-color: #8bb80b;
+    border: 1px solid black;
+    max-width: 300px;
+    height: 350px;
+    padding: 20px;
+}
 
+#contato img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
