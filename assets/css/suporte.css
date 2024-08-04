@@ -1,15 +1,5 @@
-body{
-    background-image: url("../img/fundo.png");
-    margin: 0px !important;
-}
-
-main{
-    padding: 40px;
-}
-/* Menu de navegação */
-
 nav{
-    background-color: #ffffff;
+    background-image: url("../img/fundo.png");
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
@@ -18,16 +8,16 @@ nav ul{
     align-items: center; 
     padding: 0;
     margin: 0;
-
     list-style-type: none;
 }
 
 nav ul li{
     text-align: center;
-    padding: 8px;
+    padding: 13px;
     border-radius: 20px;
-    margin: 15px 0px 15px 20px;
-
+    margin: 15px 10px 15px 20px;
+    background-color: #ffffff;
+    
 }
 
 nav ul li:hover{
@@ -40,15 +30,12 @@ nav ul li a{
 }
 
 #li_icon1, #li_icon2{
-    background-color: #152576;
+    background-color: #ffffff;
     border-radius: 100%;
     text-align: center;
 }
-#icones{
-    margin-left: auto;
-}
-
 #li_icon1 {
+    margin-left: auto;
     padding: 5px;
     width: 40px;
     height: 40px;
@@ -57,38 +44,159 @@ nav ul li a{
     padding: 0;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
 }
 .icon img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     vertical-align: middle;
 }
 
-/* Menu em telas até 1024px */
+/*Parte dos textos*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 50px;
+    color: #8bc53f;
+}
+
+#text-section {
+    max-width: 25%;
+    padding: 30px;
+}
+
+#text-section h1 {
+    font-size: 24px;
+    color: #b84d0b;
+    margin: 10px 0;
+
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;    
+    text-align: justify;
+}
+
+
+#form-section {
+    max-width: 45%;
+    background-color: #b84d0b35;
+    border: 1px solid #b84d0b35;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #b84d0b;
+    margin-top: 60px;
+
+}
+
+
+.profile-image {
+    position: absolute;
+    top: 155px; 
+    left: 72%;
+}
+
+.profile-image img {
+    width: 60px; 
+    height: auto;
+}
+
+#form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-section input, #form-section textarea {
+    width: calc(100% - 20px);  
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-section button {    
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #8bc53f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    left:67%;
+    margin-top: 20px;
+}
+
+#form-section button:hover {
+    background-color: #79a42e;
+}
+
+
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
+    section {
+        height: auto;
+        width: auto;
+        padding: 60px 60px 100px 100px;
+    }
+    
     nav ul li{
         font-size: 10pt;
         margin: 15px 10px 15px 20px;
     }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    #text-section {
+        max-width: 45%;
+        padding: 20px;
+    }
+
+    #text-section h1 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    #form-section {
+        max-width: 50%;
+        padding: 30px;
+    }
+
+    .profile-image {
+        position: absolute;
+        left: 70%;
+        top: 140px;
+    }
+
+    .profile-image img {
+        width: 55px;
+    }
+
+    #form-section button {
+        left: 63%;
+    }
+   
 }
 
-/* Menu em telas até 567px */
-
-@media (min-width: 200px) and (max-width: 567px) {
-
+@media (max-width: 768px) {
     nav ul{
         padding:15px 10px 15px 10px !important;
     }
 
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 0px 15px 0px;
-        background-color: #e7e7e78c;
-        margin-bottom: 5px !important;
-    }
 
     nav ul{
         display: block;
@@ -131,4 +239,55 @@ nav ul li a{
         padding:3px;
 
     }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    #text-section {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #text-section h1 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    main{
+        display: block;
+    }
+
+    #form-section {
+        max-width: 100%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .profile-image {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 50px;
+    }
+
+    #form-section input, #form-section textarea {
+        width: 100%;
+        width: calc(100% - 20px); 
+
+    }
+
+    #form-section button {
+        position: static;
+        margin: 20px auto 0;
+        display: block;
+        width: 100%;
+    }
+   
 }
