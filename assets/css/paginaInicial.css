@@ -105,16 +105,16 @@ section h1{
 
   /* Tela até 567px */
 
-  @media (min-width: 200px) and (max-width: 567px) {
+  @media  (max-width: 650px) {
 
     main{
-        padding: 10px;
+        padding: 20px;
     }
 
     section{
         height: auto;
         width: auto;
-        padding: 80px 30px 80px 30px;
+        padding: 100px 80px 100px 100px;
 
     }
 
@@ -131,7 +131,14 @@ section h1{
         padding:15px 10px 15px 10px !important;
     }
 
-    nav ul li{
+    nav ul .liPrincipal{
+        font-size: 10pt;
+        margin: 15px 0px 15px 0px;
+        background-color: #e7e7e78c;
+        margin-bottom: 5px !important;
+    }
+
+    #icones ul li{
         font-size: 10pt;
         margin: 15px 0px 15px 0px;
         background-color: #e7e7e78c;
