@@ -24,7 +24,7 @@ nav ul{
 
 nav ul .liPrincipal{
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     border-radius: 20px;
     margin: 15px 0px 15px 20px;
     background-color: #ffffff;
@@ -92,10 +92,9 @@ nav ul li a{
         padding:15px 10px 15px 10px !important;
     }
 
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 0px 15px 0px;
-        background-color: #e7e7e78c;
+    nav ul .liPrincipal{
+        margin: 15px 20px 15px 20px;
+        background-color: #f3f3f3;
         margin-bottom: 5px !important;
     }
 

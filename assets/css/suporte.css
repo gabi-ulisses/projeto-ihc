@@ -3,15 +3,14 @@ body{
     margin: 0px !important;
 }
 
-main{
-    padding: 40px;
-}
 /* Menu de navegação */
 
 nav{
     background-image: url("../img/fundo.png");
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
+    margin-bottom: 50px;
+
 }
 nav ul{
     display: flex;
@@ -24,7 +23,7 @@ nav ul{
 
 nav ul .liPrincipal{
     text-align: center;
-    padding: 13px;
+    padding: 10px;
     border-radius: 20px;
     margin: 15px 0px 15px 20px;
     background-color: #ffffff;
@@ -41,11 +40,12 @@ nav ul li a{
 }
 
 #li_icon1, #li_icon2{
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     border-radius: 100%;
     text-align: center;
 }
-#li_icon1 {
+
+#icones{
     margin-left: auto;
     padding: 0px;
 
@@ -57,26 +57,30 @@ nav ul li a{
 }
 
 #li_icon1 {
-    padding: 5px;
+    padding: 7px;
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 #li_icon2 {
-    padding: 0;
+    padding: 3px;
     width: 50px;
     height: 50px;
     margin-right: 10px !important;
 }
 .icon img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
 }
 
 /* Menu em telas até 1024px */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    
+    nav{
+        margin-bottom:  50px;
+    }
 
     nav ul li{
         font-size: 10pt;
@@ -86,16 +90,18 @@ nav ul li a{
 
 /* Menu em telas até 567px */
 
-@media (min-width: 200px) and (max-width: 567px) {
+@media(max-width: 567px) {
 
+    nav{
+        margin-bottom: 0px;
+    }
     nav ul{
         padding:15px 10px 15px 10px !important;
     }
 
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 0px 15px 0px;
-        background-color: #e7e7e78c;
+    nav ul .liPrincipal{
+        margin: 15px 20px 15px 20px;
+        background-color: #fffffffe;
         margin-bottom: 5px !important;
     }
 
@@ -143,70 +149,202 @@ nav ul li a{
 }
 
 
-/* Menu em telas até 1024px */
+/*Parte dos textos*/
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 10px 15px 20px;
-    }
+main {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
-/* Menu em telas até 567px */
+.titulo {
+    font-size: 50px;
+    color: #8bc53f;
+}
 
-@media (min-width: 200px) and (max-width: 567px) {
+#text-section {
+    max-width: 30%;
+    padding: 0px 0px 60px 60px;
+}
+#text-section h1 {
+    font-size: 24px;
+    color: #b84d0b;
+    margin: 10px 0;
+}
 
-    nav ul{
-        padding:15px 10px 15px 10px !important;
+.description {
+    font-size: 20px;
+    line-height: 1.4;    
+    text-align: left;
+}
+
+#form-section {
+    max-width: 100%;
+}
+#form-section fieldset{
+    max-width: 100%;
+    background-color: #b84d0b35;
+    border: 1px solid #b84d0b35;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #b84d0b;
+    border: none;
+    padding: 30px;
+    margin: 0px 60px 0px 0px;
+}
+ 
+
+ legend img{
+    background-color: #ffffff;    
+    padding: 8px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 3px #949494;
+    border: 1px solid #ececec;
+ }
+
+.profile-image {
+    text-align: center;
+    
+}
+
+.profile-image img {
+    width: 60px; 
+    height: auto;
+}
+
+#form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-section input, #form-section textarea {
+    width: calc(100% - 20px);  
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-section button {    
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #8bc53f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    margin-top:10px;
+    left: 59%;
+}
+
+#form-section button:hover {
+    background-color: #79a42e;
+}
+
+#message, #name, #email{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 1024px) {
+
+    section {
+        height: auto;
+        width: auto;
+    }
+  
+    .titulo {
+        font-size: 40px;
     }
 
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 0px 15px 0px;
-        background-color: #e7e7e78c;
-        margin-bottom: 5px !important;
+    #form-section fieldset{
+        max-width: 100%;
+        background-color: #b84d0b35;
+        border: 1px solid #b84d0b35;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: #b84d0b;
     }
 
-    nav ul{
+    #text-section {
+        max-width: 45%;
+        padding: 20px;
+    }
+
+    #text-section h1 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .profile-image img {
+        width: 55px;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    #text-section {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #text-section h1 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    main{
         display: block;
-        align-items: center; 
-        padding: 0;
-        margin: 0;
-    
-        list-style-type: none;
     }
 
-    nav ul li{
-        text-align: center;
-        padding: 8px;
-        border-radius: 20px;
-        margin: 0px 0px 0px 0px;
-    
-  } 
+    #form-section{
+        max-width: 100%;
+    }
 
-    #li_icon1 {
-        margin-left: auto;
-        padding: 8px;
-        width: 40px;
-        height: 40px;
+    #form-section fieldset{
+        max-width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+        margin-right: 0px;
+
+    }
+
+    .profile-image {
+        position: static;
+        margin: 0 auto;
         text-align: center;
     }
 
-    #li_icon1, #li_icon2 {
-        display: inline-block;
-        margin: auto;
-    }
-    
-    #icones{
-        margin: auto;
-    }
-
-    #li_icon2 {
-        padding: 0;
+    .profile-image img {
         width: 50px;
-        height: 50px;
-        padding:3px;
+    }
+
+    #form-section input, #form-section textarea {
+        width: 100%;
+        width: calc(100% - 20px); 
 
     }
+
+    #form-section button {
+        position: static;
+        margin: 20px auto 0;
+        display: block;
+        width: 100%;
+    }
+   
 }

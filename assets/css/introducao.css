@@ -21,7 +21,7 @@ nav ul{
 
 nav ul .liPrincipal{
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     border-radius: 20px;
     margin: 15px 0px 15px 20px;
     background-color: #ffffff;
@@ -38,7 +38,7 @@ nav ul li a{
 }
 
 #li_icon1, #li_icon2{
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     border-radius: 100%;
     text-align: center;
 }
@@ -301,4 +301,60 @@ p{
 
     }
 
+}
+/* Menu em telas até 567px */
+
+@media (min-width: 200px) and (max-width: 567px) {
+
+    nav ul{
+        padding:15px 10px 15px 10px !important;
+    }
+
+    nav ul .liPrincipal{
+        margin: 15px 20px 15px 20px;
+        background-color: #f3f3f3;
+        margin-bottom: 5px !important;
+    }
+
+    nav ul{
+        display: block;
+        align-items: center; 
+        padding: 0;
+        margin: 0;
+    
+        list-style-type: none;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 8px;
+        border-radius: 20px;
+        margin: 0px 0px 0px 0px;
+    
+  } 
+
+    #li_icon1 {
+        margin-left: auto;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+
+    #li_icon1, #li_icon2 {
+        display: inline-block;
+        margin: auto;
+    }
+    
+    #icones{
+        margin: auto;
+    }
+
+    #li_icon2 {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        padding:3px;
+
+    }
 }

@@ -98,8 +98,7 @@ section h1{
         font-size: 25pt;
     }
     nav ul li{
-        font-size: 10pt;
-        margin: 15px 10px 15px 20px;
+        margin: 15px 20px 15px 20px;
     }
   } 
 
@@ -128,11 +127,10 @@ section h1{
     }
 
     nav ul{
-        padding:15px 10px 15px 10px !important;
+        padding:15px 20px 15px 20px !important;
     }
 
     nav ul .liPrincipal{
-        font-size: 10pt;
         margin: 15px 0px 15px 0px;
         background-color: #e7e7e78c;
         margin-bottom: 5px !important;
