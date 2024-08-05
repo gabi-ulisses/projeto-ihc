@@ -165,7 +165,7 @@ header h2{
     display: block;
 }
 
-header img{
+header #pontoI{
     width: 100px;
     border-radius: 50%;
 }
@@ -188,19 +188,19 @@ h3{
 
 .profile-image {
     position: absolute;
-    top: -50px; /* Ajuste conforme necessário */
+    top: -50px; 
     left: 50%;
     transform: translateX(-50%);
-    background-color: white; /* Cor de fundo da imagem */
-    padding: 5px; /* Espaço ao redor da imagem */
-    border-radius: 50%; /* Torna a imagem circular */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .profile-image img {
-    width: 150px; /* Tamanho da imagem */
+    width: 150px; 
     height: 150px;
-    border-radius: 50%; /* Torna a imagem circular */
+    border-radius: 50%; 
 }
 
 
@@ -231,79 +231,75 @@ h3{
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
-    section{
-        height: auto;
-        width: auto;
-        padding: 60px 60px 100px 100px;
+    section {
+        padding: 60px;
     }
-    section h2{
-        text-align: center;
+
+    header h2 {
         font-size: 25pt;
+        text-align: center;
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 10pt;
-        margin: 15px 10px 15px 20px;
-    }
-  } 
-
-  /* Tela até 567px */
-
-  @media (min-width: 200px) and (max-width: 567px) {
-
-
-
-    nav ul{
-        padding:15px 10px 15px 10px !important;
+        margin: 15px 10px;
     }
 
-    nav ul li{
-        font-size: 10pt;
-        margin: 15px 0px 15px 0px;
-        background-color: #e7e7e78c;
-        margin-bottom: 5px !important;
+    #parte1, #parte2 {
+        width: 35%;
+        margin: 20px;
     }
+}
 
-    nav ul{
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+    nav ul {
         display: block;
-        align-items: center; 
-        padding: 0;
-        margin: 0;
-    
-        list-style-type: none;
+        align-items: center;
+        padding: 15px 10px;
     }
 
-    nav ul li{
+    nav ul li {
         text-align: center;
         padding: 8px;
         border-radius: 20px;
-        margin: 0px 0px 0px 0px;
-    
-  } 
-
-    #li_icon1 {
-        margin-left: auto;
-        padding: 8px;
-        width: 40px;
-        height: 40px;
-        text-align: center;
+        margin: 5px 0;
     }
 
     #li_icon1, #li_icon2 {
         display: inline-block;
         margin: auto;
     }
-    
-    #icones{
-        margin: auto;
+
+    #li_icon1 {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
     }
 
     #li_icon2 {
-        padding: 0;
+        padding: 3px;
         width: 50px;
         height: 50px;
-        padding:3px;
-
     }
 
+    header #pontoI {
+        width: 100px;
+        border-radius: 50%;
+        margin-left: 165px;
+    }
+
+    header h2 {
+        margin-left: 170px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #parte1, #parte2 {
+        width: 100%;
+        margin: 20px 0;
+    }
 }
