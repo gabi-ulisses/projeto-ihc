@@ -16,6 +16,7 @@ nav ul{
     padding: 0;
     margin: 0;
     list-style-type: none;
+    padding: 10px 0px;
 }
 
 nav ul .liPrincipal{
@@ -43,13 +44,13 @@ nav ul li a{
 }
 #icones{
     margin-left: auto;
-    padding: 8px;
+    padding: 0px;
 
 }
 
 #icones ul li{
     margin-left: auto;
-    margin: 15px 10px 15px 20px;
+    margin: 15px 0px 15px 20px;
 }
 
 #li_icon1 {
@@ -62,7 +63,7 @@ nav ul li a{
     padding: 0;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 .icon img{
     width: 100%;

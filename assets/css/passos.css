@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/fundo.png");
+    background-color: #ffffff;
     margin: 0px !important;
 }
 
@@ -9,7 +9,7 @@ main{
 /* Menu de navegação */
 
 nav{
-    background-color: #ffffff;
+    background-image: url("../img/fundo.png");
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
@@ -18,19 +18,20 @@ nav ul{
     align-items: center; 
     padding: 0;
     margin: 0;
-
     list-style-type: none;
+    padding: 10px 0px;
 }
 
-nav ul li{
+nav ul .liPrincipal{
     text-align: center;
     padding: 8px;
     border-radius: 20px;
     margin: 15px 0px 15px 20px;
-
+    background-color: #ffffff;
+    
 }
 
-nav ul li:hover{
+nav ul .liPrincipal:hover{
     background-color: #ececec;
 }
 
@@ -40,24 +41,32 @@ nav ul li a{
 }
 
 #li_icon1, #li_icon2{
-    background-color: #152576;
+    background-color: #ffffff !important;
     border-radius: 100%;
     text-align: center;
 }
 #icones{
     margin-left: auto;
+    padding: 0px;
+
+}
+
+#icones ul li{
+    margin-left: auto;
+    margin: 15px 0px 15px 20px;
 }
 
 #li_icon1 {
     padding: 5px;
     width: 40px;
     height: 40px;
+    margin-right: 10px;
 }
 #li_icon2 {
     padding: 0;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 .icon img{
     width: 100%;

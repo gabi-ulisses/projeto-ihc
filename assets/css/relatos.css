@@ -3,59 +3,57 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
+main{
     display: flex;
-    height: 100vh;
-    overflow: hidden;
 }
 
-.secao_principal{
-    background-image:url("../img/fundo2.png") ;
-    background-size: contain;
+.secao1{
+    background-image:url("../img/fundo.png") ;
+    background-size: cover;
     color: white;
     height: 100vh;
-    width: 50vh;
-    display: flex;
-    align-items: center;
+    width: 60vh;
     text-align: center;
 }
 
-.secao_principal header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.secao1 header {
+   
     align-items: center;
     background-color: #ffffff;
     color: #202020;
     padding: 10px 30px 10px 30px;
     text-align:left;
     border-radius: 30px;
-    margin: 100px 30px 10px 30px;
+    margin: 200px 50px 0px 50px;
     margin-bottom: auto;
+    display: block;
+    box-shadow: 1px 2px 3px #000000ba;
 }
 
-.secao_principal main{
-    display: flex;
+.secao1 article p{
+    font-size: 280%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0%;
+    padding: 80px 80px 0px 80px;
 }
-.back-button {
+
+.btnVoltar {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 10px;
     font-size: 24px;
     cursor: pointer;
     background: none;
     border: none;
-    color: white;
+    color: #202020;
+    background-color: #ffffff;
+    border-radius: 200px;
+    padding: 7px 10px;
 }
 
 
-.details-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
-.details-section {
+#secao2{
     background: #ffffff;
     width: 70%;
     display: flex;
@@ -64,27 +62,27 @@ body {
     padding: 20px;
 }
 
-.detail-item {
+.relatos {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.dot {
+.rel {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.dot1 { background: #2a2a72; }
-.dot2 { background: #ff3300; }
-.dot3 { background: #2a9d8f; }
-.dot4 { background: #8bc34a; }
+.rel1 { background: #2a2a72; }
+.rel2 { background: #ff3300; }
+.rel3 { background: #2a9d8f; }
+.rel4 { background: #8bc34a; }
 
-.detail-item p {
+.relatos p {
     margin: 0;
-    background: #ffe4e1;
+    background: rgba(44, 227, 255, 0.136);
     padding: 10px;
     border-radius: 10px;
     width: 100%;
