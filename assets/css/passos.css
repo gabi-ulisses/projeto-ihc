@@ -74,7 +74,53 @@ nav ul li a{
     vertical-align: middle;
 }
 
-/* Menu em telas até 1024px */
+/*parte dos textos*/
+
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #0028a5;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#parte1, #parte2 {
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    background-color: #8bb80b;
+    border: 1px solid #8bb80b;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#parte1 section, #parte2 section {
+    display: flex;
+    align-items: center;
+}
+
+#parte1 img, #parte2 img {
+    margin-right: 10px;
+    width: 30px; 
+    height: auto; 
+}
+
+#parte1 p, #parte2 p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/*Responsividade*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -82,9 +128,36 @@ nav ul li a{
         font-size: 10pt;
         margin: 15px 10px 15px 20px;
     }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    #parte1, #parte2 {
+        width: 80%;
+        height: auto; 
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #parte1 p, #parte2 p {
+        font-size: 14px;
+    }
+
+    #parte1 img, #parte2 img {
+        width: 25px; 
+    }
+
+    #parte1, #parte2 {
+        padding: 15px;
+    }
 }
 
-/* Menu em telas até 567px */
+/* telas até 567px */
 
 @media (min-width: 200px) and (max-width: 567px) {
 
@@ -138,5 +211,28 @@ nav ul li a{
         height: 50px;
         padding:3px;
 
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #parte1, #parte2 {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    #parte1 p, #parte2 p {
+        font-size: 12px; 
+    }
+
+    #parte1 img, #parte2 img {
+        width: 20px; 
     }
 }
