@@ -5,15 +5,16 @@ body {
 
 main{
     display: flex;
+    height: 100vh;
 }
 
-.secao1{
+#secao2{
     background-image:url("../img/fundo.png") ;
     background-size: cover;
     color: white;
-    height: 100vh;
-    width: 60%;
+    width: 50%;
     text-align: center;
+    padding: 200px 40px !important;
 }
 
 .secao1 header {
@@ -34,7 +35,8 @@ main{
     font-size: 280%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 0%;
-    padding: 80px 80px 0px 80px;
+    padding: 100px 80px 0px 80px;
+    color: #ffffff;
 }
 
 .btnVoltar {
@@ -53,12 +55,9 @@ main{
 
 
 
-#secao2{
-    background: #ffffff;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.secao1{
+    background: #042054;
+    width: 50%;
     padding: 20px;
 }
 
@@ -69,8 +68,8 @@ main{
 }
 
 .rel {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     margin-right: 20px;
 }

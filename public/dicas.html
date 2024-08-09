@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IHC</title>
     <link rel="stylesheet" href="../assets/css/dicas.css">
+    <style>
+
+    </style>
 </head>
 <!--  Referência: https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML#boa_sem%C3%A2ntica  -->
 <body>
@@ -34,17 +37,20 @@
             </header>
             <article>
                 <p>
-                    Elementos Apropriados: Utilize elementos HTML semânticos adequados como < button >, < header >, < nav >, < main >, < article >, < aside >, < footer > para descrever corretamente o propósito de cada parte do conteúdo.
+                    Elementos Apropriados: Utilize elementos HTML semânticos adequados como &lt;button&gt;, &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; para descrever corretamente o propósito de cada parte do conteúdo.
                 </p>
             </article>
             <article>
                 <p>
-                    Evitar < div > e < span > para funções semânticas: Evite usar <div> e <span> para elementos que têm uma função específica. Por exemplo, use < button > ao invés de < div > para botões.
+                    Evitar &lt;div&gt; e &lt;span&gt; para funções semânticas: Evite usar &lt;div&gt; e &lt;span&gt; para elementos que têm uma função específica. Por exemplo, use &lt;button&gt; ao invés de &lt;div&gt; para botões.
                 </p> 
             </article>
             <article class="articlePre">
                 <pre>
-
+&lt;header&gt;
+    &lt;!-- Exemplo de bom uso da semântica HTML --&gt;
+    &lt;h1&gt;Título da Página&lt;/h1&gt;
+&lt;/header&gt;
                 </pre>
             </article>
         </section>
@@ -54,7 +60,7 @@
             </header>
             <article>
                 <p>
-                    Títulos e Parágrafos: Estruture o conteúdo com títulos (< h1 >, < h2 >, etc.), parágrafos (< p >), e listas (< ul >, < ol >).
+                    Títulos e Parágrafos: Estruture o conteúdo com títulos (&lt;h1&gt;, &lt;h2&gt;, etc.), parágrafos (&lt;p&gt;), e listas (&lt;ul&gt;, &lt;ol&gt;).
                 </p>
             </article>
             <article>
@@ -64,7 +70,13 @@
             </article>
             <article class="articlePre">
                 <pre>
-
+&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item de lista 1&lt;/li&gt;
+    &lt;li&gt;Item de lista 2&lt;/li&gt;
+&lt;/ul&gt;
                 </pre>
             </article>
         </section>
@@ -79,155 +91,61 @@
             </article>
             <article>
                 <p>
-                    Expansão de Abreviações e Acrônimos: Expanda abreviações e acrônimos ao menos na primeira vez que aparecem no texto.
+                    Leitura Facilitada: Escreva frases curtas e parágrafos concisos para facilitar a leitura.
                 </p> 
             </article>
             <article class="articlePre">
                 <pre>
-
+&lt;p&gt;A acessibilidade é essencial para garantir que todos os usuários possam interagir com o conteúdo.&lt;/p&gt;
                 </pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Layouts de Página</h2>
+                <h2>Links</h2>
             </header>
             <article>
                 <p>
-                    Evitar Tabelas para Layout: Não use tabelas HTML para criar layouts de páginas. Utilize CSS para essa finalidade.
+                    Texto do Link: Certifique-se de que o texto dos links é descritivo e faz sentido fora de contexto.
                 </p>
             </article>
             <article>
                 <p>
-                    Semântica HTML5: Utilize a semântica HTML5 para seccionar o conteúdo (< nav >, < header >, < footer >, < main >, < article >, < section >, < aside >).
+                    Evite "Clique aqui": Use textos que descrevam o destino do link ao invés de "Clique aqui".
                 </p> 
             </article>
             <article class="articlePre">
                 <pre>
-
+&lt;a href=&quot;exemplo.html&quot;&gt;Leia mais sobre acessibilidade&lt;/a&gt;
                 </pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Controles de Interface do Usuário (UI)</h2>
+                <h2>Imagens e Mídia</h2>
             </header>
             <article>
                 <p>
-                    Elementos Interativos: Use elementos nativos como < button >, < a >, < input >, < select > para interações.
+                    Texto Alternativo: Use o atributo alt para fornecer uma descrição concisa da imagem.
                 </p>
             </article>
             <article>
                 <p>
-                    Acessibilidade pelo Teclado: Certifique-se de que os elementos interativos são acessíveis pelo teclado, utilizando atributos como tabindex e eventos de teclado em JavaScript se necessário.
+                    Legendas: Adicione legendas para vídeos sempre que possível.
                 </p> 
             </article>
             <article class="articlePre">
                 <pre>
-
+&lt;img src=&quot;caminho/para/imagem.jpg&quot; alt=&quot;Descrição da imagem&quot;&gt;
                 </pre>
             </article>
         </section>
         <section>
-            <header>
-                <h2>Rótulos de Texto Significativos</h2>
-            </header>
-            <article>
-                <p>
-                    Descritivos e Específicos: Use rótulos claros e específicos para botões e links. Evite rótulos genéricos como "Clique aqui".
+                <p class="manual-link">
+                    Acesse o <a href="manual.html" >Manual de Bolso</a> para dicas práticas sobre acessibilidade.
                 </p>
-            </article>
-            <article>
-                <p>
-                    Formulários: Utilize o elemento < label > para associar rótulos a campos de formulário (< input >, < textarea >, etc.).
-                </p> 
-            </article>
-            <article class="articlePre">
-                <pre>
-
-                </pre>
-            </article>
         </section>
-        <section>
-            <header>
-                <h2>Tabelas de Dados Acessíveis</h2>
-            </header>
-            <article>
-                <p>
-                    Cabeçalhos de Tabela: Utilize < th > para definir cabeçalhos de tabela e o atributo scope para especificar se são cabeçalhos de linha ou coluna.
-                </p>
-            </article>
-            <article>
-                <p>
-                    Legenda e Resumo: Use < caption > e o atributo summary para fornecer descrições e resumos da tabela.
-                </p> 
-            </article>
-            <article class="articlePre">
-                <pre>
-
-                </pre>
-            </article>
-        </section>
-        <section>
-            <header>
-                <h2>Alternativas em Texto</h2>
-            </header>
-            <article>
-                <p>
-                    Imagens: Sempre forneça um texto alternativo (alt) para imagens. Certifique-se de que o texto seja descritivo do conteúdo da imagem.
-                </p>
-            </article>
-            <article>
-                <p>
-                    Conteúdo Multimídia: Ofereça transcrições para conteúdo de áudio e legendas para vídeos.
-                </p> 
-            </article>
-            <article class="articlePre">
-                <pre>
-
-                </pre>
-            </article>
-        </section>
-        <section>
-            <header>
-                <h2>Testar Acessibilidade</h2>
-            </header>
-            <article>
-                <p>
-                    Leitores de Tela: Teste seus documentos utilizando leitores de tela para verificar a acessibilidade.
-                </p>
-            </article>
-            <article>
-                <p>
-                    Ferramentas de Avaliação: Utilize ferramentas de avaliação de acessibilidade como WAVE, Axe, ou Lighthouse para identificar e corrigir problemas de acessibilidade.                </p> 
-            </article>
-            <article class="articlePre">
-                <pre>
-
-                </pre>
-            </article>
-        </section>
-        <section>
-            <header>
-                <h2>Boa Prática Geral</h2>
-            </header>
-            <article>
-                <p>
-                    Consistência: Mantenha consistência no uso de semântica HTML e estrutura do documento desde o início do projeto.
-                </p>
-            </article>
-            <article>
-                <p>
-                    Educação Contínua: Mantenha-se atualizado com as melhores práticas e recomendações de acessibilidade, como as diretrizes WCAG (Web Content Accessibility Guidelines).
-                </p>
-                </article>
-            <article class="articlePre">
-                <pre>
-
-                </pre>
-            </article>
-        </section>
-   </main>
-
+        
+    </main>
 </body>
 </html>

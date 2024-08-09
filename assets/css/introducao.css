@@ -3,6 +3,7 @@ body{
 }
 
 
+
 /* Menu de da pagina introdução */
 
 nav{
@@ -88,10 +89,12 @@ article{
 
 #parte1{
     padding: 48px;
+    background-color: #042054;
+    color: #dbe7f6;
 }
 
 #parte1 h1{
-    color: #1e5399;
+    color: #ffffff;
 }
 
 
@@ -105,7 +108,7 @@ article{
 
 #parte1 #p3{
     background-color: #ffffff;
-    box-shadow: 2px 2px 3px #717171;
+    box-shadow: 2px 2px 3px #000000;
     color:#130854;
     border: 1px solid #bcbcbc;
     padding: 20px;
@@ -119,7 +122,7 @@ article{
 }
 
 #p2 b, #p1 b{
-    color: #1e5399;
+    color: #ffffff;
 }
 
 #p3 img{
@@ -140,7 +143,7 @@ aside small{
 }
 
 #parte2{
-    background-color: #dbe7f6;
+    background-color: #90a4c9;
     padding: 48px;
 }
 
@@ -206,6 +209,7 @@ aside small{
 
     main{
         padding: 10px;
+
     }
 
     section{
@@ -357,4 +361,75 @@ p{
         padding:3px;
 
     }
+}
+
+
+#secaoSecundaria {
+    max-width: 100%;
+    padding-left: 60px;
+    padding-top: 30px;
+    font-size: 12px;
+    background-color: #041c47;
+    margin: auto;
+    display: flex;
+    align-items: left; /* Alinha verticalmente os itens */
+    justify-content: left; /* Alinha horizontalmente os itens */
+    text-align: left;
+    flex-direction:row-reverse; /* Para garantir que os elementos fiquem lado a lado */
+    padding-bottom: 50px;
+}
+
+
+#secaoSecundaria aside {
+    flex: 1;
+    background-color: #fffcf7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #2b2b2b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #042054;
+    align-items: center;
+    margin: 1px 30px ;
+    max-width: 20%;
+    display: flex;
+    text-align: left;
+}
+
+#secaoSecundaria aside h3 {
+    margin-top: 0;
+    margin-right: 20px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+
+#secaoSecundaria article p img {
+    box-shadow: 1px 2px 3px #2b2b2b;
+    padding: 0;
+    border: none;
+}
+ #secaoSegundaria article{
+    max-width: 10%;
+
+ }
+
+.photo-gallery p{
+    position: relative;
+    margin: auto;
+}
+
+.photo-gallery p img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+
+
+#imgPassos {
+    position: relative;
+    width: 20%;
+    margin-right: 20px;
 }

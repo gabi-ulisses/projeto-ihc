@@ -13,7 +13,7 @@
                 <li class="liPrincipal"><a href="index.html" title="Página inicial">HOME</a></li>
                 <li class="liPrincipal"><a href="public/introducao.html" title="Introdução">INTRODUÇÃO</a></li>
                 <li class="liPrincipal"><a href="public/dicas.html" title="Dicas">DICAS</a></li>
-                <li class="liPrincipal"><a href="public/passos.html" title="Passo a passo">PASSO A PASSO</a></li>
+                <li class="liPrincipal"><a href="public/passos.html" title="Passo a passo"><img width="40px" src="assets/img/quebra-cabeca.png" alt=""></a></li>
                 <li id="icones">
                     <ul>
                         <li id="li_icon1"><a class="icon" href="public/suporte.html"><img src="assets/img/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
@@ -25,7 +25,7 @@
     </header>
     
     <main>
-        <section>
+        <section id="secaoPrincipal">
             <header>
                 <h1>IHC, Usabilidade e Acessibilidade</h1>
             </header>
@@ -38,11 +38,29 @@
                 </p> 
                 <p>
                     Este projeto foi criado como trabalho final da disciplina de <b>Introdução ao desenvolvimento 
-                    de página web  (IDPW)</b>. 
+                    de página web  (IDPW)</b>.
                 </p>
             </article>
         </section>
-   </main>
+        
+        <!-- Novo contêiner para as imagens e o aside -->
+        <section id="secaoSecundaria">
+            <!-- Imagens -->
+            <article class="photo-gallery">
+                <img src="./assets/img/ana2.png" alt="Avatar da Ana" title="Oi, eu sou a Ana!">
+                <img src="./assets/img/gabi4.png" alt="Avatar da Gabi" title="Oi, eu sou a Gabi!">
+            </article>
+            
+            <!-- Aside -->
+            <aside title="Próximos passos" class="saltitando">
+                <h3>Próximos Passos</h3>
+                <img src="./assets/img/passos.png" alt="Passos" id="imgPassos">
+                <p>Explore a <a href="public/introducao.html">Introdução ao Tema</a> e confira as <a href="public/dicas.html">Dicas e Boas Práticas</a> para melhorar a acessibilidade e usabilidade do seu site.</p>
+            </aside>
+        </section>
+    </main>
+    
+    
 
 </body>
 </html>

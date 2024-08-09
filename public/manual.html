@@ -5,15 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IHC</title>
     <link rel="stylesheet" href="../assets/css/manual.css">
+    <style>
+    
+
+        h1 {
+            color: #005F5B; /* Azul quase verde */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            border-radius: 8px; /* Cantos arredondados */
+            background-color: #FAF3E3; /* Laranja claro */
+            transition: transform 0.2s ease-in-out; /* Transição suave */
+        }
+
+        th {
+            background-color: #F58220; /* Laranja escuro */
+            color: white;
+        }
+
+        td:hover {
+            background-color: #FBAF58; /* Laranja claro mais vibrante */
+            transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+        }
+
+        th:hover {
+            background-color: #E07310; /* Laranja escuro mais vibrante */
+            transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+        }
+
+        .highlight {
+            background-color: #FBAF58; /* Laranja claro */
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+            background: #F58220; /* Laranja escuro */
+            padding: 10px;
+            z-index: 1000;
+            color: white;
+            border-radius: 8px; /* Cantos arredondados */
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html" title="Página inicial">HOME</a></li>
-                <li><a href="introducao.html" title="Introdução">INTRODUÇÃO</a></li>
-                <li><a href="dicas.html" title="Dicas">DICAS</a></li>
-                <li><a href="passos.html" title="Passo a passo">PASSO A PASSO</a></li>
+                <li class="liPrincipal"><a href="../index.html" title="Página inicial">HOME</a></li>
+                <li class="liPrincipal"><a href="introducao.html" title="Introdução">INTRODUÇÃO</a></li>
+                <li class="liPrincipal"><a href="dicas.html" title="Dicas">DICAS</a></li>
+                <li class="liPrincipal"><a href="passos.html" title="Passo a passo">PASSO A PASSO</a></li>
                 <li id="icones">
                     <ul>
                         <li id="li_icon1"><a class="icon" href="suporte.html"><img src="../assets/img/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
@@ -24,21 +83,110 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <header>
-                <h1></h1>
-            </header>
-            <article>
-                <p>
-                    
-                </p> 
-                <p>
-                    
-                </p>
-            </article>
-        </section>
-   </main>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+    <main id="conteudo">
+        <h1>Manual de Bolso - Dicas de Acessibilidade</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Seção</th>
+                    <th>Dicas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="highlight">HTML Semântico</td>
+                    <td>Elementos Apropriados</td>
+                    <td>Use <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, etc., para semântica correta.</td>
+                </tr>
+                <tr>
+                    <td>Evitar <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code></td>
+                    <td>Prefira elementos específicos como <code>&lt;button&gt;</code> ao invés de <code>&lt;div&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Estrutura de Conteúdo</td>
+                    <td>Títulos e Parágrafos</td>
+                    <td>Estruture com <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, etc.</td>
+                </tr>
+                <tr>
+                    <td>Hierarquia Correta</td>
+                    <td>Use hierarquia lógica de títulos.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Linguagem Clara</td>
+                    <td>Clareza</td>
+                    <td>Evite jargões, use linguagem simples.</td>
+                </tr>
+                <tr>
+                    <td>Expansão de Acrônimos</td>
+                    <td>Explique acrônimos na primeira menção.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Layouts</td>
+                    <td>Evitar Tabelas</td>
+                    <td>Use CSS para layout, não HTML.</td>
+                </tr>
+                <tr>
+                    <td>Semântica HTML5</td>
+                    <td>Seccione conteúdo com <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, etc.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">UI</td>
+                    <td>Elementos Interativos</td>
+                    <td>Use <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> nativos.</td>
+                </tr>
+                <tr>
+                    <td>Acessibilidade pelo Teclado</td>
+                    <td>Assegure navegação por teclado (<code>tabindex</code>).</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Rótulos de Texto</td>
+                    <td>Rótulos Claros</td>
+                    <td>Evite “Clique aqui”, use rótulos descritivos.</td>
+                </tr>
+                <tr>
+                    <td>Formulários</td>
+                    <td>Use <code>&lt;label&gt;</code> para campos de formulário.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Tabelas Acessíveis</td>
+                    <td>Cabeçalhos de Tabela</td>
+                    <td>Use <code>&lt;th&gt;</code> com <code>scope</code>.</td>
+                </tr>
+                <tr>
+                    <td>Legenda e Resumo</td>
+                    <td>Use <code>&lt;caption&gt;</code> e <code>summary</code> em tabelas.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Alternativas em Texto</td>
+                    <td>Imagens</td>
+                    <td>Forneça <code>alt</code> descritivo para imagens.</td>
+                </tr>
+                <tr>
+                    <td>Multimídia</td>
+                    <td>Ofereça transcrições e legendas.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Testar Acessibilidade</td>
+                    <td>Leitores de Tela</td>
+                    <td>Teste usando leitores de tela.</td>
+                </tr>
+                <tr>
+                    <td>Ferramentas de Avaliação</td>
+                    <td>Use WAVE, Axe, Lighthouse.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="highlight">Boa Prática</td>
+                    <td>Consistência</td>
+                    <td>Mantenha consistência na semântica e estrutura.</td>
+                </tr>
+                <tr>
+                    <td>Educação Contínua</td>
+                    <td>Atualize-se com WCAG.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
 </body>
 </html>
