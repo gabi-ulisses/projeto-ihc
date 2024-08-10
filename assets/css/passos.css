@@ -80,45 +80,96 @@ h2 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: #0028a5;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
-#parte1, #parte2 {
-    width: 500px;
-    height: 350px;
-    padding: 20px;
-    background-color: #8bb80b;
-    border: 1px solid #8bb80b;
+.step {
+    position: relative;
+    background-color: #005f99;
+    border: 1px solid #005f99;
     border-radius: 15px;
-    text-align: left;
+    padding: 30px;
+    height: 220px;
+    text-align: center;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-#parte1 section, #parte2 section {
-    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
-#parte1 img, #parte2 img {
-    margin-right: 10px;
-    width: 30px; 
+.step:hover {
+    transform: translateY(-10px); /* Move a caixinha 10px para cima */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar mais destaque */
+}
+
+.step1 { background-color: #0073e6; }
+.step2 { background-color: #0059b3; }
+.step3 { background-color: #004080; }
+.step4 { background-color: #00264d; }
+.step5 { background-color: #336699; }
+.step6 { background-color: #1a5276; }
+.step7 { background-color: #154360; }
+.step8 { background-color: #0e2f44; }
+
+.step img.step-img {
+    position: absolute;
+    top: -25px;
+    width: 50px; 
     height: auto; 
 }
 
-#parte1 p, #parte2 p {
+.step p {
     margin: 0;
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
 }
+
+#dica-container {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff5722, #ea6f98);;
+    color: white;
+    padding: 10px;
+    border: 1px solid #f6f7f8;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 140px;
+    font-size: 13px;
+}
+
+
+
+#dica-container aside {
+    text-align: center;
+}
+
+#dica-container aside a {
+    color: #450000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dica-container aside a:hover {
+    text-decoration: underline;
+}
+
 
 /*Responsividade*/
 
@@ -130,31 +181,36 @@ h2 {
     }
 
     #container {
-        flex-direction: column;
-        align-items: center;
-        display: flex;
-    }
-
-    #parte1, #parte2 {
-        width: 80%;
-        height: auto; 
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mantém a grid responsiva */
     }
 
     h2 {
         font-size: 1.5em;
     }
 
-    #parte1 p, #parte2 p {
-        font-size: 14px;
+    #dica-container {
+        width: 120px;
+        height: 120px;
+        font-size: 12px;
+        top: 160px;
     }
 
-    #parte1 img, #parte2 img {
-        width: 25px; 
+}
+
+@media(min-width: 570px) and (max-width: 760px){
+
+    #dica-container {
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+        top: 150px;
+        right: 5px;
     }
 
-    #parte1, #parte2 {
-        padding: 15px;
+    #dica-container aside {
+        font-size: 10px;
     }
+
 }
 
 /* telas até 567px */
@@ -214,25 +270,27 @@ h2 {
     }
 
     #container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* Coloca um item por linha */
         gap: 20px;
     }
 
-    #parte1, #parte2 {
-        width: 90%; 
-        padding: 10px;
-    }
-
     h2 {
-        font-size: 1.2em; 
+        font-size: 1.2em;
+        text-align: left;
     }
 
-    #parte1 p, #parte2 p {
-        font-size: 12px; 
+
+    #dica-container {
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+        top: 400px;
+        right: 5px;
     }
 
-    #parte1 img, #parte2 img {
-        width: 20px; 
+    #dica-container aside {
+        font-size: 10px;
     }
+
+
 }
