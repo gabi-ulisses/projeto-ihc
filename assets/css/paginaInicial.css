@@ -172,6 +172,34 @@ nav ul li a {
     vertical-align: middle;
 }
 
+/*Estilo icones acessibilidade*/
+
+#acessibilidade {
+    position: fixed;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    background-color: #ffffff;
+}
+
+#acessibilidade a {
+    text-align: center;
+    display: block;
+}
+
+#acessibilidade img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#acessibilidade img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
 
 /* Estilos para telas com largura entre 769px e 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {

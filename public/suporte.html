@@ -23,7 +23,10 @@
             </ul>
         </nav>
     </header>
-   
+    <article id="acessibilidade">
+        <a href="#" title="Modo Escuro"><img src="../assets/img/icones/visivel.png" alt="Ícone modo escuro"></a>
+        <a href="#" title="Voz"><img src="../assets/img/icones/comando-de-voz.png" alt="Ícone voz"></a>
+    </article>
     <main>
         <section id="text-section">
             <article>
@@ -41,13 +44,13 @@
                 <legend class="profile-image"><img src="../assets/img/icones/suporte.png" alt="Suporte"></legend>
                     <form>
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" placeholder="Informe seu nome completo...">
+                        <input type="text" id="name" name="name" placeholder="Informe seu nome completo..." required>
                         
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Informe seu e-mail...">
+                        <input type="email" id="email" name="email" placeholder="Informe seu e-mail..." required>
                         
                         <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" placeholder="Descreva sua solicitação de suporte detalhadamente..."></textarea>
+                        <textarea id="message" name="message" placeholder="Descreva sua solicitação de suporte detalhadamente..." required></textarea>
                         
                         <button type="submit">Enviar</button>
                     </form>

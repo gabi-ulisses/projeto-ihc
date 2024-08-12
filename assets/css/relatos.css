@@ -94,6 +94,34 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*Estilo icones acessibilidade*/
+
+#acessibilidade {
+    position: fixed;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    background-color: #ffffff;
+}
+
+#acessibilidade a {
+    text-align: center;
+    display: block;
+}
+
+#acessibilidade img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#acessibilidade img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
 /* Estilos responsivos para telas pequenas */
 @media (max-width: 567px) {
     main {

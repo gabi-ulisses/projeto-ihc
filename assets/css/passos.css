@@ -81,16 +81,15 @@ h2 {
     color: #0e4853;
     text-align: center;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 #container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cria colunas que se ajustam automaticamente */
     gap: 20px;
     padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Largura máxima de 1200px */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
 }
 
 .step {
@@ -103,16 +102,18 @@ h2 {
     text-align: center;
     color: #fff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+    flex-direction: column; /* Layout em coluna */
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    justify-content: center; /* Alinha os itens ao centro verticalmente */
+    margin-top: 60px; /* Margem superior de 60px */
 }
 
 .step:hover {
     transform: translateY(-10px); /* Move a caixinha 10px para cima */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar mais destaque */
 }
+
+/* Cores específicas para cada passo */
 
 .step1 { background-color: #1e8698; }
 .step2 { background-color: #1a758a; }
@@ -123,11 +124,15 @@ h2 {
 .step7 { background-color: #062341; }
 .step8 { background-color: #031528; }
 
+
+/* Estilo para imagens dentro dos passos */
+/*Faz com que a imagem fique entre body e as caixinhas do step*/
+
 .step img.step-img {
-    position: absolute;
-    top: -25px;
-    width: 50px; 
-    height: auto; 
+    position: absolute; /* Posiciona a imagem de forma absoluta dentro do passo */
+    top: -25px; /* Posiciona a imagem 25px acima da parte superior do passo */
+    width: 50px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */ 
 }
 
 .step p {
@@ -138,21 +143,21 @@ h2 {
 }
 
 #dica-container {
-    position: absolute;
-    top: 140px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #ff5722, #eaad6f);;
-    color: white;
-    padding: 10px;
-    border: 1px solid #f6f7f8;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    height: 140px;
-    font-size: 13px;
+    position: absolute; /* Posiciona o container de dicas de forma absoluta */
+    top: 140px; /* Posiciona o container 140px abaixo do topo */
+    right: 10px; /* Posiciona o container 10px da borda direita */
+    display: flex; /* Layout flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    background: linear-gradient(135deg, #ff5722, #eaad6f); /* Gradiente de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Padding interno de 10px */
+    border: 1px solid #f6f7f8; /* Borda ao redor do container */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ao redor do container */
+    width: 150px; /* Largura do container */
+    height: 140px; /* Altura do container */
+    font-size: 13px; /* Tamanho da fonte */
 }
 
 
@@ -168,10 +173,36 @@ h2 {
 }
 
 #dica-container aside a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
 }
 
+/*Estilo icones acessibilidade*/
 
+#acessibilidade {
+    position: fixed;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    background-color: #00021a;
+}
+
+#acessibilidade a {
+    text-align: center;
+    display: block;
+}
+
+#acessibilidade img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#acessibilidade img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
 /*Responsividade*/
 
 @media (min-width: 769px) and (max-width: 1024px) {

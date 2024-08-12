@@ -75,81 +75,14 @@ nav ul li a{
     vertical-align: middle;
 }
 
-/* Menu em telas até 1024px */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    nav ul li{
-        
-        margin: 15px 10px 15px 20px;
-    }
-}
-
-
-/* Menu em telas até 567px */
-
-@media (min-width: 200px) and (max-width: 567px) {
-
-    nav ul{
-        padding:15px 10px 15px 10px !important;
-    }
-
-    nav ul .liPrincipal{
-        margin: 15px 20px 15px 20px;
-        background-color: #f3f3f3;
-        margin-bottom: 5px !important;
-    }
-
-    nav ul{
-        display: block;
-        align-items: center; 
-        padding: 0;
-        margin: 0;
-    
-        list-style-type: none;
-    }
-
-    nav ul li{
-        text-align: center;
-        padding: 8px;
-        border-radius: 20px;
-        margin: 0px 0px 0px 0px;
-    
-  } 
-
-    #li_icon1 {
-        margin-left: auto;
-        padding: 8px;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-    }
-
-    #li_icon1, #li_icon2 {
-        display: inline-block;
-        margin: auto;
-    }
-    
-    #icones{
-        margin: auto;
-    }
-
-    #li_icon2 {
-        padding: 0;
-        width: 50px;
-        height: 50px;
-        padding:3px;
-
-    }
-}
 
 /*Parte dos textos*/
 
 section {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    gap: 20px;
+    display: flex; /* Exibe itens em linha */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    position: relative; /* Define o posicionamento relativo */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 main header{
@@ -167,7 +100,7 @@ header #pontoI{
     width: 5%;
     height: auto;
     border-radius: 50%;
-    background: linear-gradient(10deg, #11818d, #152576);
+    background: linear-gradient(10deg, #11818d, #152576); /*Deixa com efeito de gradientes*/
     font-size: 50px;
     padding: 9px;
     color: #ffffff;
@@ -181,7 +114,7 @@ h3{
 #parte1, #parte2{
     background: linear-gradient(10deg, #11818d, #152576);
     border: none;
-    box-shadow: 1px 2px 3px #868685;
+    box-shadow: 1px 2px 3px #868685; /*Cria uma sombra*/
     width: 25%;
     height: auto;
     padding: 20px;
@@ -192,15 +125,16 @@ h3{
     color: #ffffff;
 }
 
+/*Colocar a imagem entre cada caixinha e parte do body*/
 .profile-image {
     position: absolute;
     top: -50px; 
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Centraliza horizontalmente */
     background-color: white; 
     padding: 5px; 
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 50%; /* Forma a imagem em círculo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor da imagem */
 }
 
 .profile-image img {
@@ -211,9 +145,9 @@ h3{
 
 
 #contato{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: flex; /* Exibe itens em cada linha */
+    flex-direction: column; /* Alinha itens verticalmente */
+    gap: 20px; /* espaçamento entre os itens*/
 }
 
 #item{
@@ -224,17 +158,47 @@ h3{
     width: 40px;
     height: auto;
     margin-right: 20px;
-    display:block;
+    display:block; /* Exibe a imagem como bloco */
 }
 
 #item a{
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado dos links */
     color: #ffffff;
 }
 
 #item p{
-    margin: 0;
+    margin: 0; /* Remove margem dos parágrafos */
 }
+
+/*Estilo icones acessibilidade*/
+
+#acessibilidade {
+    position: fixed;  /* Posiciona o elemento fixo na tela */
+    margin-top: 250px;
+    display: flex;  /* Exibe itens em cada linha */
+    flex-direction: column; /* Alinha itens verticalmente */
+    gap: 10px;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    background-color: #00021a;
+}
+
+#acessibilidade a {
+    text-align: center;
+    display: block;
+}
+
+#acessibilidade img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Transição suave para transformação */
+}
+
+#acessibilidade img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Responsividade do conteúdo principal para telas até 1024px */
 
 @media (min-width: 769px) and (max-width: 1024px) {
     section {
@@ -321,5 +285,73 @@ h3{
         margin: 0px;
         padding: 0px;
         width: 100%;
+    }
+}
+
+/* Menu em telas até 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    nav ul li{
+        
+        margin: 15px 10px 15px 20px;
+    }
+}
+
+
+/* Menu em telas até 567px */
+
+@media (min-width: 200px) and (max-width: 567px) {
+
+    nav ul{
+        padding:15px 10px 15px 10px !important;
+    }
+
+    nav ul .liPrincipal{
+        margin: 15px 20px 15px 20px;
+        background-color: #f3f3f3;
+        margin-bottom: 5px !important;
+    }
+
+    nav ul{
+        display: block;
+        align-items: center; 
+        padding: 0;
+        margin: 0;
+    
+        list-style-type: none;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 8px;
+        border-radius: 20px;
+        margin: 0px 0px 0px 0px;
+    
+  } 
+
+    #li_icon1 {
+        margin-left: auto;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+
+    #li_icon1, #li_icon2 {
+        display: inline-block;
+        margin: auto;
+    }
+    
+    #icones{
+        margin: auto;
+    }
+
+    #li_icon2 {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        padding:3px;
+
     }
 }
