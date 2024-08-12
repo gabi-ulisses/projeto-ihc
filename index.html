@@ -10,14 +10,14 @@
     <header>
         <nav>
             <ul>
-                <li class="liPrincipal"><a href="index.html" title="Página inicial">HOME</a></li>
+                <li class="liPrincipal" style="background-color: #e9e9e9; box-shadow:1px 1px 1px #050505a4"><a href="index.html" title="Página inicial">INÍCIO</a></li>
                 <li class="liPrincipal"><a href="public/introducao.html" title="Introdução">INTRODUÇÃO</a></li>
                 <li class="liPrincipal"><a href="public/dicas.html" title="Dicas">DICAS</a></li>
-                <li class="liPrincipal"><a href="public/passos.html" title="Passo a passo"><img width="40px" src="assets/img/quebra-cabeca.png" alt=""></a></li>
+                <li class="liPrincipal"><a href="public/passos.html" title="Passo a passo"><img width="22px" src="assets/img/icones/quebra-cabeca.png" alt=""></a></li>
                 <li id="icones">
                     <ul>
-                        <li id="li_icon1"><a class="icon" href="public/suporte.html"><img src="assets/img/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
-                        <li id="li_icon2"><a class="icon" href="public/sobre.html"><img src="assets/img/sobre.png" alt="Ícone de pessoas" title="Sobre nós"></a></li>    
+                        <li id="li_icon1"><a class="icon" href="public/suporte.html"><img src="assets/img/icones/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
+                        <li id="li_icon2"><a class="icon" href="public/sobre.html"><img src="assets/img/icones/sobre.png" alt="Ícone de pessoas" title="Sobre nós"></a></li>    
                     </ul>
                 </li>   
             </ul>
@@ -27,7 +27,7 @@
     <main>
         <section id="secaoPrincipal">
             <header>
-                <h1>IHC, Usabilidade e Acessibilidade</h1>
+                <h1 title="IHC, Usabilidade e Acessibilidade" tabindex="0">IHC, Usabilidade e Acessibilidade</h1>
             </header>
             <article>
                 <p>
@@ -43,18 +43,15 @@
             </article>
         </section>
         
-        <!-- Novo contêiner para as imagens e o aside -->
         <section id="secaoSecundaria">
-            <!-- Imagens -->
-            <article class="photo-gallery">
-                <img src="./assets/img/ana2.png" alt="Avatar da Ana" title="Oi, eu sou a Ana!">
-                <img src="./assets/img/gabi4.png" alt="Avatar da Gabi" title="Oi, eu sou a Gabi!">
+            <article class="avatar">
+                <img src="./assets/img/avatares/ana2.png" alt="Avatar da Ana" title="Oi, eu sou a Ana!">
+                <img src="./assets/img/avatares/gabi4.png" alt="Avatar da Gabi" title="Oi, eu sou a Gabi!">
             </article>
             
-            <!-- Aside -->
             <aside title="Próximos passos" class="saltitando">
-                <h3>Próximos Passos</h3>
-                <img src="./assets/img/passos.png" alt="Passos" id="imgPassos">
+                <h3 tabindex="0">Próximos Passos</h3>
+                <img src="./assets/img/icones/passos.png" alt="Passos" id="imgPassos">
                 <p>Explore a <a href="public/introducao.html">Introdução ao Tema</a> e confira as <a href="public/dicas.html">Dicas e Boas Práticas</a> para melhorar a acessibilidade e usabilidade do seu site.</p>
             </aside>
         </section>

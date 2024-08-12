@@ -1,6 +1,6 @@
 /* Estilos gerais */
 body {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     margin: 0px !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -59,14 +59,14 @@ nav ul li a {
 }
 
 #li_icon1 {
-    padding: 5px;
+    padding: 7px;
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 
 #li_icon2 {
-    padding: 0;
+    padding: 3px;
     width: 50px;
     height: 50px;
     margin-right: 10px !important;
@@ -78,16 +78,15 @@ nav ul li a {
     vertical-align: middle;
 }
 
-/* Menu em telas até 1024px */
+/* Menu em telas entre 769px e 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     nav ul li {
-        font-size: 10pt;
         margin: 15px 10px 15px 20px;
     }
 }
 
-/* Menu em telas até 567px */
-@media (min-width: 200px) and (max-width: 567px) {
+/* Menu em telas até px */
+@media (max-width: 768px){
     nav ul {
         padding: 15px 10px 15px 10px !important;
     }
@@ -140,7 +139,7 @@ nav ul li a {
 
 /* Estilos do conteúdo */
 main h1 {
-    color: #ff5900;
+    color: #042054;
 }
 
 /* Layout padrão para telas grandes */
@@ -204,6 +203,7 @@ main section .articlePre {
     }
 }
 
+/* Estilos para blocos de exemplos de código */
 .articlePre pre {
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -212,11 +212,13 @@ main section .articlePre {
     padding: 0;
 }
 
-.manual-link{
+/* Estilos para link "Manual de bolso" */
+.manual-link {
     text-align: center;
     width: 100%;
     cursor: pointer;
 }
+
 .manual-link a {
     color: #ff8400;
     font-weight: bold;

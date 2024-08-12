@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto IDPW</title>
     <link rel="stylesheet" href="../assets/css/relatos.css">
+    <!-- https://www.handtalk.me/br/blog/acessibilidade-digital-especialistas/ -->
 </head>
 <body>
     <header>
         <nav>
-            <a href="introducao.html"><button class="btnVoltar">&#x21A9;</button></a>
+            <a href="introducao.html">
+                <button class="btnVoltar" title="Voltar" tabindex="0">&#x21A9;</button>
+            </a>
         </nav>
     </header>
     <main class="container">
         <section class="secao1">
-            <header>
+            <header tabindex="0">
                 <p>
                     "Para a maioria das pessoas, a tecnologia torna a vida 
                     mais fácil. Para uma pessoa com deficiência, a 
@@ -25,27 +28,65 @@
                 </p>
             </header>
             <article>
-                <p>
-                    MAS, É IMPORTANTE PENSAR NOS DETALHES...
+                <p tabindex="0">
+                    MAS, É IMPORTANTE PENSAR NA TRAJETÓRIA ATÉ OS DIAS ATUAIS...
                 </p>
             </article> 
         </section>
         <section id="secao2">
-            <article class="relatos">
+            <article class="relatos" tabindex="0">
                 <span class="rel rel1"></span>
-                <p>texto texto texto</p>
+                <p>
+                    A discussão sobre <b>acessibilidade digital</b> começou nas décadas de <b>1970</b> e <b>1980</b>, 
+                    quando os computadores pessoais começaram a se popularizar. Um marco importante 
+                    foi o lançamento das <b>Diretrizes de Acessibilidade para a Web (WCAG)</b> em <b>1999</b>, que 
+                    ajudou a formalizar o conceito.
+                </p>          
             </article>
-            <article class="relatos">
+            <article class="relatos" tabindex="0">
                 <span class="rel rel2"></span>
-                <p>texto texto texto</p>
+                <p>
+                    No Brasil, a acessibilidade digital ainda está em desenvolvimento. 
+                    Embora o número de especialistas na área esteja crescendo, eles enfrentam 
+                    desafios significativos, como a falta de autonomia e recursos para implementar 
+                    melhorias nas empresas. Esses profissionais são responsáveis por identificar e 
+                    aplicar mudanças para tornar organizações mais acessíveis e, na maioria das vezes, têm um 
+                    perfil específico, o que reflete uma <b>baixa diversidade na área</b>. 
+                    Isso é importante para entender as possíveis limitações e áreas de melhoria na inclusão 
+                    dentro das equipes de TI.
+                </p>
             </article>
-            <article class="relatos">
+            <article class="relatos" tabindex="0">
                 <span class="rel rel3"></span>
-                <p>texto texto texto</p>
+                <p>
+                    No que diz respeito às ferramentas de acessibilidade, os leitores de tela 
+                    integrados aos sistemas operacionais são geralmente mais bem avaliados do 
+                    que os instalados em sites. As ferramentas automáticas para avaliar e corrigir
+                    a acessibilidade são úteis, mas as ferramentas overlay, como extensões de navegador, 
+                    muitas vezes comprometem o layout dos sites. A inteligência artificial é vista como 
+                    uma solução promissora para melhorar a acessibilidade, especialmente devido à 
+                    escassez de profissionais qualificados.
+                </p>
             </article>
-            <article class="relatos">
+            <article class="relatos" tabindex="0">
                 <span class="rel rel4"></span>
-                <p>texto texto texto</p>
+                <p>
+                    A sociedade está avançando na contratação de serviços de 
+                    acessibilidade e na mudança de cultura dentro das empresas. No entanto, o
+                     governo ainda precisa intensificar seus esforços. Aumentar a fiscalização e 
+                     aplicar multas às empresas que não cumprem as normas de acessibilidade pode ser 
+                     uma solução eficaz.
+                </p>
+            </article>
+            <article class="relatos" tabindex="0">
+                <span class="rel rel4"></span>
+                <p>
+                    Para melhorar a acessibilidade digital, é necessário mais regulamentação, 
+                    campanhas de conscientização que alcancem regiões fora dos grandes centros, 
+                    e a capacitação contínua de profissionais desde o ensino superior e técnico. 
+                    Além disso, realizar testes de usabilidade com a participação de pessoas com
+                    deficiência é essencial, seguindo o princípio de <b><i>"nada sobre nós, sem nós"</i></b>.
+                </p>
             </article>
         </section>
     </main>

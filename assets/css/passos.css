@@ -1,6 +1,7 @@
 body{
     background-color: #ffffff;
     margin: 0px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main{
@@ -57,13 +58,13 @@ nav ul li a{
 }
 
 #li_icon1 {
-    padding: 5px;
+    padding: 7px;
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 #li_icon2 {
-    padding: 0;
+    padding: 3px;
     width: 50px;
     height: 50px;
     margin-right: 10px !important;
@@ -77,10 +78,10 @@ nav ul li a{
 /*parte dos textos*/
 
 h2 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #0028a5;
+    color: #0e4853;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 #container {
@@ -95,7 +96,7 @@ h2 {
 .step {
     position: relative;
     background-color: #005f99;
-    border: 1px solid #005f99;
+    box-shadow: 1px 2px 3px #00264d;
     border-radius: 15px;
     padding: 30px;
     height: 220px;
@@ -113,14 +114,14 @@ h2 {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar mais destaque */
 }
 
-.step1 { background-color: #0073e6; }
-.step2 { background-color: #0059b3; }
-.step3 { background-color: #004080; }
-.step4 { background-color: #00264d; }
-.step5 { background-color: #336699; }
-.step6 { background-color: #1a5276; }
-.step7 { background-color: #154360; }
-.step8 { background-color: #0e2f44; }
+.step1 { background-color: #1e8698; }
+.step2 { background-color: #1a758a; }
+.step3 { background-color: #16657b; }
+.step4 { background-color: #12546d; }
+.step5 { background-color: #0e445f; }
+.step6 { background-color: #0a3350; }
+.step7 { background-color: #062341; }
+.step8 { background-color: #031528; }
 
 .step img.step-img {
     position: absolute;
@@ -143,7 +144,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #ff5722, #ea6f98);;
+    background: linear-gradient(135deg, #ff5722, #eaad6f);;
     color: white;
     padding: 10px;
     border: 1px solid #f6f7f8;
@@ -176,7 +177,7 @@ h2 {
 @media (min-width: 769px) and (max-width: 1024px) {
 
     nav ul li{
-        font-size: 10pt;
+        
         margin: 15px 10px 15px 20px;
     }
 

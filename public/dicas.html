@@ -6,22 +6,20 @@
     <title>IHC</title>
     <link rel="stylesheet" href="../assets/css/dicas.css">
     <style>
-
     </style>
 </head>
-<!--  Referência: https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML#boa_sem%C3%A2ntica  -->
 <body>
     <header>
         <nav>
             <ul>
-                <li class="liPrincipal"><a href="../index.html" title="Página inicial">HOME</a></li>
-                <li class="liPrincipal"><a href="introducao.html" title="Introdução">INTRODUÇÃO</a></li>
-                <li class="liPrincipal"><a href="dicas.html" title="Dicas">DICAS</a></li>
-                <li class="liPrincipal"><a href="passos.html" title="Passo a passo">PASSO A PASSO</a></li>
+                <li class="liPrincipal"><a href="../index.html" title="Página inicial" tabindex="0">INÍCIO</a></li>
+                <li class="liPrincipal"><a href="introducao.html" title="Introdução" tabindex="0">INTRODUÇÃO</a></li>
+                <li class="liPrincipal" style="background-color: #e9e9e9; box-shadow:1px 1px 1px #050505a4"><a href="dicas.html" title="Dicas" tabindex="0">DICAS</a></li>
+                <li class="liPrincipal"><a href="passos.html" title="Passo a passo" tabindex="0"><img width="22px" src="../assets/img/icones/quebra-cabeca.png" alt="Quebra-cabeça"></a></li>
                 <li id="icones">
                     <ul>
-                        <li id="li_icon1"><a class="icon" href="suporte.html"><img src="../assets/img/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
-                        <li id="li_icon2"><a class="icon" href="sobre.html"><img src="../assets/img/sobre2.png" alt="Ícone de pessoas" title="Sobre nós"></a></li>
+                        <li id="li_icon1"><a class="icon" href="suporte.html" tabindex="0"><img src="../assets/img/icones/suporte.png" alt="Ícone de suporte" title="Suporte"></a></li>
+                        <li id="li_icon2"><a class="icon" href="sobre.html" tabindex="0"><img src="../assets/img/icones/sobre2.png" alt="Ícone de pessoas" title="Sobre nós"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -29,123 +27,92 @@
     </header>
     <main>
         <header>
-            <h1>#DICAS</h1>
+            <h1 tabindex="0">#DICAS</h1>
         </header>
         <section>
             <header>
-                <h2>Utilização da Semântica HTML</h2>
+                <h2 tabindex="0">Utilização da Semântica HTML</h2>
             </header>
             <article>
-                <p>
-                    Elementos Apropriados: Utilize elementos HTML semânticos adequados como &lt;button&gt;, &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; para descrever corretamente o propósito de cada parte do conteúdo.
-                </p>
+                <p>Elementos Apropriados: Utilize elementos HTML semânticos adequados como <code>&lt;button&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code> para descrever corretamente o propósito de cada parte do conteúdo.</p>
             </article>
             <article>
-                <p>
-                    Evitar &lt;div&gt; e &lt;span&gt; para funções semânticas: Evite usar &lt;div&gt; e &lt;span&gt; para elementos que têm uma função específica. Por exemplo, use &lt;button&gt; ao invés de &lt;div&gt; para botões.
-                </p> 
+                <p>Evitar <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> para funções semânticas: Evite usar <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> para elementos que têm uma função específica. Por exemplo, use <code>&lt;button&gt;</code> ao invés de <code>&lt;div&gt;</code> para botões.</p> 
             </article>
             <article class="articlePre">
-                <pre>
-&lt;header&gt;
+                <pre>&lt;header&gt;
     &lt;!-- Exemplo de bom uso da semântica HTML --&gt;
     &lt;h1&gt;Título da Página&lt;/h1&gt;
-&lt;/header&gt;
-                </pre>
+&lt;/header&gt;</pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Estrutura de Conteúdo Textual</h2>
+                <h2 tabindex="0">Estrutura de Conteúdo Textual</h2>
             </header>
             <article>
-                <p>
-                    Títulos e Parágrafos: Estruture o conteúdo com títulos (&lt;h1&gt;, &lt;h2&gt;, etc.), parágrafos (&lt;p&gt;), e listas (&lt;ul&gt;, &lt;ol&gt;).
-                </p>
+                <p>Títulos e Parágrafos: Estruture o conteúdo com títulos (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.), parágrafos (<code>&lt;p&gt;</code>), e listas (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>).</p>
             </article>
             <article>
-                <p>
-                    Hierarquia Correta: Mantenha uma hierarquia correta de títulos para facilitar a navegação e compreensão do conteúdo.
-                </p> 
+                <p>Hierarquia Correta: Mantenha uma hierarquia correta de títulos para facilitar a navegação e compreensão do conteúdo.</p> 
             </article>
             <article class="articlePre">
-                <pre>
-&lt;h1&gt;Título Principal&lt;/h1&gt;
+                <pre>&lt;h1&gt;Título Principal&lt;/h1&gt;
 &lt;h2&gt;Subtítulo&lt;/h2&gt;
 &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
 &lt;ul&gt;
     &lt;li&gt;Item de lista 1&lt;/li&gt;
     &lt;li&gt;Item de lista 2&lt;/li&gt;
-&lt;/ul&gt;
-                </pre>
+&lt;/ul&gt;</pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Linguagem Clara e Simples</h2>
+                <h2 tabindex="0">Linguagem Clara e Simples</h2>
             </header>
             <article>
-                <p>
-                    Clareza: Utilize uma linguagem clara e evite jargões ou gírias.
-                </p>
+                <p>Clareza: Utilize uma linguagem clara e evite jargões ou gírias.</p>
             </article>
             <article>
-                <p>
-                    Leitura Facilitada: Escreva frases curtas e parágrafos concisos para facilitar a leitura.
-                </p> 
+                <p>Leitura Facilitada: Escreva frases curtas e parágrafos concisos para facilitar a leitura.</p> 
             </article>
             <article class="articlePre">
-                <pre>
-&lt;p&gt;A acessibilidade é essencial para garantir que todos os usuários possam interagir com o conteúdo.&lt;/p&gt;
-                </pre>
+                <pre>&lt;p&gt;A acessibilidade é essencial para garantir que todos os usuários possam interagir com o conteúdo.&lt;/p&gt;</pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Links</h2>
+                <h2 tabindex="0">Links</h2>
             </header>
             <article>
-                <p>
-                    Texto do Link: Certifique-se de que o texto dos links é descritivo e faz sentido fora de contexto.
-                </p>
+                <p>Texto do Link: Certifique-se de que o texto dos links é descritivo e faz sentido fora de contexto.</p>
             </article>
             <article>
-                <p>
-                    Evite "Clique aqui": Use textos que descrevam o destino do link ao invés de "Clique aqui".
-                </p> 
+                <p>Evite "Clique aqui": Use textos que descrevam o destino do link ao invés de "Clique aqui".</p> 
             </article>
             <article class="articlePre">
-                <pre>
-&lt;a href=&quot;exemplo.html&quot;&gt;Leia mais sobre acessibilidade&lt;/a&gt;
-                </pre>
+                <pre>&lt;a href=&quot;exemplo.html&quot;&gt;Leia mais sobre acessibilidade&lt;/a&gt;</pre>
             </article>
         </section>
         <section>
             <header>
-                <h2>Imagens e Mídia</h2>
+                <h2 tabindex="0">Imagens e Mídia</h2>
             </header>
             <article>
-                <p>
-                    Texto Alternativo: Use o atributo alt para fornecer uma descrição concisa da imagem.
-                </p>
+                <p>Texto Alternativo: Use o atributo alt para fornecer uma descrição concisa da imagem.</p>
             </article>
             <article>
-                <p>
-                    Legendas: Adicione legendas para vídeos sempre que possível.
-                </p> 
+                <p>Legendas: Adicione legendas para vídeos sempre que possível.</p> 
             </article>
             <article class="articlePre">
-                <pre>
-&lt;img src=&quot;caminho/para/imagem.jpg&quot; alt=&quot;Descrição da imagem&quot;&gt;
-                </pre>
+                <pre>&lt;img src=&quot;caminho/para/imagem.jpg&quot; alt=&quot;Descrição da imagem&quot;&gt;</pre>
             </article>
         </section>
-        <section>
-                <p class="manual-link">
-                    Acesse o <a href="manual.html" >Manual de Bolso</a> para dicas práticas sobre acessibilidade.
-                </p>
+        <section id="manual-link">
+            <p class="manual-link">
+                Acesse o <a href="manual.html" tabindex="0">Manual de Bolso</a> para dicas práticas sobre acessibilidade.
+            </p>
         </section>
-        
     </main>
 </body>
 </html>

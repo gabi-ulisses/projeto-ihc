@@ -1,29 +1,38 @@
+/* Estilos gerais */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-main{
+/* Layout principal */
+main {
     display: flex;
-    height: 100vh;
+    height: auto;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
 }
 
-#secao2{
-    background-image:url("../img/fundo.png") ;
-    background-size: cover;
-    color: white;
+/* Seção 2 */
+#secao2 {
     width: 50%;
     text-align: center;
-    padding: 200px 40px !important;
+    padding: 50px 40px !important;
+    height: auto;
+}
+
+/* Seção 1 */
+.secao1 {
+    background: #042054;
+    width: 50%;
+    padding: 20px;
 }
 
 .secao1 header {
-   
     align-items: center;
     background-color: #ffffff;
     color: #202020;
-    padding: 10px 30px 10px 30px;
-    text-align:left;
+    padding: 10px 30px;
+    text-align: left;
     border-radius: 30px;
     margin: 200px 50px 0px 50px;
     margin-bottom: auto;
@@ -31,14 +40,15 @@ main{
     box-shadow: 1px 2px 3px #000000ba;
 }
 
-.secao1 article p{
+.secao1 article p {
     font-size: 280%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 0%;
     padding: 100px 80px 0px 80px;
     color: #ffffff;
 }
 
+/* Botão Voltar */
 .btnVoltar {
     position: absolute;
     top: 20px;
@@ -53,14 +63,7 @@ main{
     padding: 7px 10px;
 }
 
-
-
-.secao1{
-    background: #042054;
-    width: 50%;
-    padding: 20px;
-}
-
+/* Blocos de Relatos */
 .relatos {
     display: flex;
     align-items: center;
@@ -81,20 +84,35 @@ main{
 
 .relatos p {
     margin: 0;
-    background: rgba(44, 227, 255, 0.136);
+    background-color: #ffffff;
+    color: #202020;
+    text-align: left;
+    line-height: 1.5;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos responsivos para telas pequenas */
 @media (max-width: 567px) {
-
-    main{
+    main {
         display: block;
     }
 
-    .secao1{
+    .secao1 {
         width: 100%;
+    }
+
+    #secao2 {
+        width: 100%;
+        padding: 200px 20px !important;
+    }
+
+    .relatos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 90%;
     }
 }

@@ -83,7 +83,7 @@ nav ul li a{
     }
 
     nav ul li{
-        font-size: 10pt;
+        
         margin: 15px 10px 15px 20px;
     }
 }
@@ -163,7 +163,7 @@ main {
 
 .titulo {
     font-size: 50px;
-    color: #8bc53f;
+    color: #157666;
 }
 
 #text-section {
@@ -232,7 +232,7 @@ main {
 #form-section button {    
     position: absolute;
     padding: 10px 20px;
-    background-color: #8bc53f;
+    background-color: #152576;
     color: white;
     border: none;
     border-radius: 15px;
@@ -243,7 +243,7 @@ main {
 }
 
 #form-section button:hover {
-    background-color: #79a42e;
+    background-color: #0f1b59;
 }
 
 #message, #name, #email{

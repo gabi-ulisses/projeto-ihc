@@ -58,13 +58,13 @@ nav ul li a{
 }
 
 #li_icon1 {
-    padding: 5px;
+    padding: 7px;
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 #li_icon2 {
-    padding: 0;
+    padding: 3px;
     width: 50px;
     height: 50px;
     margin-right: 10px !important;
@@ -80,7 +80,7 @@ nav ul li a{
 @media (min-width: 769px) and (max-width: 1024px) {
 
     nav ul li{
-        font-size: 10pt;
+        
         margin: 15px 10px 15px 20px;
     }
 }
@@ -153,21 +153,25 @@ section {
 }
 
 main header{
-    margin-top: 250px;
-    margin-right: 270px;
+    margin-top: 20px;
     text-align: center;
+    margin-right: 40px;
 }
 
 header h2{
-    display: inline-flex;
     color:#b84d0b;
     font-size: 30px;
-    display: block;
 }
 
 header #pontoI{
-    width: 100px;
+    width: 5%;
+    height: auto;
     border-radius: 50%;
+    background: linear-gradient(10deg, #11818d, #152576);
+    font-size: 50px;
+    padding: 9px;
+    color: #ffffff;
+    margin: auto;
 }
 
 h3{
@@ -175,16 +179,17 @@ h3{
 }
 
 #parte1, #parte2{
-    background-color: #c7e86b;
-    border: 1px solid #c7e86b;
+    background: linear-gradient(10deg, #11818d, #152576);
+    border: none;
     box-shadow: 1px 2px 3px #868685;
-    width: 330px;
-    height: 500px;
+    width: 25%;
+    height: auto;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
     border-radius: 30px;
     position: relative;
+    color: #ffffff;
 }
 
 .profile-image {
@@ -224,7 +229,7 @@ h3{
 
 #item a{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 #item p{
@@ -241,8 +246,12 @@ h3{
         text-align: center;
     }
 
+    header #pontoI{
+        width: 8%;
+    }
+
     nav ul li {
-        font-size: 10pt;
+        
         margin: 15px 10px;
     }
 
@@ -254,6 +263,7 @@ h3{
 
 /* Responsividade para telas até 768px */
 @media (max-width: 768px) {
+    
     nav ul {
         display: block;
         align-items: center;
@@ -283,17 +293,17 @@ h3{
         width: 50px;
         height: 50px;
     }
+    header{
+        text-align: center;
+        width: 100%;
+    }
 
     header #pontoI {
-        width: 100px;
-        border-radius: 50%;
-        margin-left: 165px;
+        width: 7%;
+        margin: auto;
     }
 
-    header h2 {
-        margin-left: 170px;
-    }
-
+   
     section {
         flex-direction: column;
         padding: 20px;
@@ -301,7 +311,8 @@ h3{
 
     #parte1, #parte2 {
         width: 100%;
-        margin: 20px 0;
+        margin: 30px 0;
+        height: auto;
     }
 
     main header{
@@ -310,17 +321,5 @@ h3{
         margin: 0px;
         padding: 0px;
         width: 100%;
-    }
-
-    main header h2{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 50px;
-
-    }
-    main header #pontoI{
-        margin-top: 0px;
-        margin-left: 0px;
-
     }
 }
