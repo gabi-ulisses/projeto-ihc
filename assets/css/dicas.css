@@ -201,6 +201,19 @@ main section .articlePre {
         padding: 0px;
         margin: 0px;
     }
+
+    footer {
+        padding: 10px; /* Padding ainda menor em telas menores */
+    }
+
+    footer p {
+        font-size: 12px; /* Fonte menor para melhor legibilidade em telas pequenas */
+    }
+
+    footer a {
+        display: block; /* Os links serão exibidos como blocos, em vez de inline */
+        margin-top: 10px; /* Adiciona um espaço entre os links e o texto */
+    }
 }
 
 /* Estilos para blocos de exemplos de código */
@@ -235,6 +248,27 @@ main section .articlePre {
 }
 
 
+/* Estilo para o skiplink */
+.skiplink {
+    position: absolute; /* Posiciona o link de forma absoluta */
+    top: -40px; /* Posiciona 40px acima do topo */
+    left: 0; /* Alinha ao início da lateral esquerda */
+    background-color: #000027; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 8px 10px; /* Padding interno */
+    z-index: 100; /* Camada superior */
+    transition: top 0.3s ease; /* Transição suave para a posição */
+    border-radius: 15px; /* Arredondamento dos cantos */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.skiplink:focus {
+    top: 0; /* Move o link para a posição inicial */
+    margin-top: 5px; /* Adiciona margem superior de 5px */
+    margin-left: 5px; /* Adiciona margem à esquerda de 5px */
+}
+
 /*Estilo icones acessibilidade*/
 
 #acessibilidade {
@@ -244,7 +278,7 @@ main section .articlePre {
     flex-direction: column;
     gap: 10px;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
-    background-color: #042054;
+    background-color: #ffffff;
     padding: 7px;
     border-radius: 0px 20px 20px 0px;
 }
@@ -264,3 +298,41 @@ main section .articlePre {
 #acessibilidade img:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
+
+
+#setaVolta{
+    text-align: right;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #setaVolta a{
+    text-decoration: none;
+    padding: 1px 5px;
+    border-radius: 100px;
+    background-color: #ffffff;
+  }
+
+  footer{
+    background-image: url("../img/fundo.png");
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer p{
+    font-size: 16px;
+  }
+
+  footer a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: #ff8400;
+  }
+  footer img{
+    width: 60px;
+    height: auto
+  }

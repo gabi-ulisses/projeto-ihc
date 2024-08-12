@@ -10,6 +10,7 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0% 5%;
+
 }
 
 section h1 {
@@ -202,6 +203,37 @@ nav ul li a {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
+footer{
+    background-color: #ffffff;
+    color: #EF6F20;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin-top: 100px;
+  }
+
+  footer img{
+    width: 60px;
+    height: auto
+  }
+  footer p{
+    font-size: 16px;
+  }
+
+  footer a{
+    color: #EF6F20;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: #02114f;
+  }
+
+  footer img{
+    width: 60px;
+    height: auto
+  }
 
 /* Estilos para telas com largura entre 769px e 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -294,6 +326,19 @@ nav ul li a {
         width: 50px;
         height: 50px;
         padding: 3px;
+    }
+
+    footer {
+        padding: 10px; /* Padding ainda menor em telas menores */
+    }
+
+    footer p {
+        font-size: 12px; /* Fonte menor para melhor legibilidade em telas pequenas */
+    }
+
+    footer a {
+        display: block; /* Os links serão exibidos como blocos, em vez de inline */
+        margin-top: 10px; /* Adiciona um espaço entre os links e o texto */
     }
 }
 

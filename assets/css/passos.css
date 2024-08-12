@@ -205,6 +205,31 @@ h2 {
 #acessibilidade img:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
+
+footer{
+    background-image: url("../img/fundo.png");
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer p{
+    font-size: 16px;
+  }
+
+  footer a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: #ff8400;
+  }
+
+  footer img{
+    width: 60px;
+    height: auto
+  }
 /*Responsividade*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -243,6 +268,19 @@ h2 {
 
     #dica-container aside {
         font-size: 10px;
+    }
+
+    footer {
+        padding: 10px; /* Padding ainda menor em telas menores */
+    }
+
+    footer p {
+        font-size: 12px; /* Fonte menor para melhor legibilidade em telas pequenas */
+    }
+
+    footer a {
+        display: block; /* Os links serão exibidos como blocos, em vez de inline */
+        margin-top: 10px; /* Adiciona um espaço entre os links e o texto */
     }
 
 }
@@ -326,5 +364,17 @@ h2 {
         font-size: 10px;
     }
 
+    footer {
+        padding: 10px; /* Padding ainda menor em telas menores */
+    }
+
+    footer p {
+        font-size: 12px; /* Fonte menor para melhor legibilidade em telas pequenas */
+    }
+
+    footer a {
+        display: block; /* Os links serão exibidos como blocos, em vez de inline */
+        margin-top: 10px; /* Adiciona um espaço entre os links e o texto */
+    }
 
 }

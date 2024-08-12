@@ -74,6 +74,31 @@ nav ul li a{
     vertical-align: middle;
 }
 
+footer{
+    background-image: url("../img/fundo.png");
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  footer p{
+    font-size: 16px;
+  }
+
+  footer a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: #ff8400;
+  }
+
+  footer img{
+    width: 60px;
+    height: auto
+  }
 /* Menu em telas até 1024px */
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -316,6 +341,14 @@ main {
         width: 55px;
     }
 
+    footer {
+        padding: 15px; /* Reduz o padding para ocupar menos espaço vertical */
+    }
+
+    footer p {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -374,6 +407,19 @@ main {
         margin: 20px auto 0;
         display: block;
         width: 100%;
+    }
+
+    footer {
+        padding: 10px; /* Padding ainda menor em telas menores */
+    }
+
+    footer p {
+        font-size: 12px; /* Fonte menor para melhor legibilidade em telas pequenas */
+    }
+
+    footer a {
+        display: block; /* Os links serão exibidos como blocos, em vez de inline */
+        margin-top: 10px; /* Adiciona um espaço entre os links e o texto */
     }
    
 }

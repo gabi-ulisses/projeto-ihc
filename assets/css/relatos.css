@@ -95,6 +95,27 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo para o skiplink */
+.skiplink {
+    position: absolute; /* Posiciona o link de forma absoluta */
+    top: -40px; /* Posiciona 40px acima do topo */
+    left: 0; /* Alinha ao início da lateral esquerda */
+    background-color: #000027; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 8px 10px; /* Padding interno */
+    z-index: 100; /* Camada superior */
+    transition: top 0.3s ease; /* Transição suave para a posição */
+    border-radius: 15px; /* Arredondamento dos cantos */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.skiplink:focus {
+    top: 0; /* Move o link para a posição inicial */
+    margin-top: 5px; /* Adiciona margem superior de 5px */
+    margin-left: 5px; /* Adiciona margem à esquerda de 5px */
+}
+
 /*Estilo icones acessibilidade*/
 
 #acessibilidade {
@@ -126,6 +147,21 @@ main {
 }
 
 
+#setaVolta{
+    text-align: right;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #setaVolta a{
+    text-decoration: none;
+    padding: 1px 5px;
+    border-radius: 100px;
+    background-color: #ffffff;
+  }
+
+ 
+
 /* Estilos responsivos para telas pequenas */
 @media (max-width: 567px) {
     main {
@@ -147,4 +183,5 @@ main {
         margin-bottom: 20px;
         width: 90%;
     }
+   
 }
