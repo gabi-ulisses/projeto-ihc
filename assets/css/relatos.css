@@ -7,9 +7,8 @@ body {
 /* Layout principal */
 main {
     display: flex;
-    height: auto;
-    background-image: url("../img/fundo.png");
-    background-size: cover;
+    height: 100vh;
+    
 }
 
 /* Seção 2 */
@@ -18,6 +17,8 @@ main {
     text-align: center;
     padding: 50px 40px !important;
     height: auto;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
 }
 
 /* Seção 1 */
@@ -104,6 +105,8 @@ main {
     gap: 10px;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
     background-color: #ffffff;
+    padding: 7px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 #acessibilidade a {
@@ -112,8 +115,8 @@ main {
 }
 
 #acessibilidade img {
-    width: 40px; /* Tamanho dos ícones */
-    height: 40px;
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -121,6 +124,7 @@ main {
 #acessibilidade img:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
+
 
 /* Estilos responsivos para telas pequenas */
 @media (max-width: 567px) {

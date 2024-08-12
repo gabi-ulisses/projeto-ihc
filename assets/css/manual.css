@@ -76,6 +76,7 @@ th:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 7px;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
     background-color: #ffffff;
 }
@@ -86,8 +87,8 @@ th:hover {
 }
 
 #acessibilidade img {
-    width: 40px; /* Tamanho dos ícones */
-    height: 40px;
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
     cursor: pointer;
     transition: transform 0.2s;
 }

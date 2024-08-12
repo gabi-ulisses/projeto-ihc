@@ -258,7 +258,9 @@ main {
     flex-direction: column;
     gap: 10px;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
-    background-color: #00021a;
+    background-color: #0f1b59;
+    padding: 7px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 #acessibilidade a {
@@ -267,8 +269,8 @@ main {
 }
 
 #acessibilidade img {
-    width: 40px; /* Tamanho dos ícones */
-    height: 40px;
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
     cursor: pointer;
     transition: transform 0.2s;
 }
