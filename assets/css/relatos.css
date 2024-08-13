@@ -13,7 +13,7 @@ main {
 
 /* Seção 2 */
 #secao2 {
-    width: 50%;
+    width: 60%;
     text-align: center;
     padding: 50px 40px !important;
     height: auto;
@@ -24,7 +24,7 @@ main {
 /* Seção 1 */
 .secao1 {
     background: #042054;
-    width: 50%;
+    width: 40%;
     padding: 20px;
 }
 
@@ -35,7 +35,7 @@ main {
     padding: 10px 30px;
     text-align: left;
     border-radius: 30px;
-    margin: 200px 50px 0px 50px;
+    margin: 160px 50px 0px 50px;
     margin-bottom: auto;
     display: block;
     box-shadow: 1px 2px 3px #000000ba;
@@ -160,8 +160,72 @@ main {
     background-color: #ffffff;
   }
 
- 
+  
+  @media (max-width: 1276px) {
+    main {
+        height: auto;
+    }
 
+    .secao1 {
+        width: 100%;
+    }
+
+    #secao2 {
+        width: 100%;
+        padding: 100px 20px !important;
+    }
+
+    .relatos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .secao1 header {
+        
+        margin: 200px 50px 0px 50px;
+        
+    }
+   
+}
+  @media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    .secao1 {
+        width: 100%;
+    }
+
+    #secao2 {
+        width: 100%;
+        padding: 100px 20px !important;
+        margin: auto;
+    }
+
+    .relatos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 90%;
+        margin-left: 0px;
+
+    }
+
+    .secao1 header {
+        
+        margin: 100px 50px 0px 50px;
+        
+    }
+
+    #setaVolta{
+        text-align: right;
+        width: 90%;
+        margin-top: 50px;
+    }
+   
+}
 /* Estilos responsivos para telas pequenas */
 @media (max-width: 567px) {
     main {
@@ -174,7 +238,7 @@ main {
 
     #secao2 {
         width: 100%;
-        padding: 200px 20px !important;
+        padding: 100px 20px !important;
     }
 
     .relatos {
