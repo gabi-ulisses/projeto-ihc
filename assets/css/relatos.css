@@ -41,7 +41,7 @@ main {
     box-shadow: 1px 2px 3px #000000ba;
 }
 
-.secao1 article p {
+.secao1 article h1 {
     font-size: 280%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 0%;

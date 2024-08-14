@@ -80,6 +80,8 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   }
 
   footer p{
@@ -183,6 +185,8 @@ main {
     padding: 20px; /* Adiciona padding interno de 20px */
     margin: 0px !important; /* Remove margens padrão com prioridade */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte para a área principal */
+    min-height: 60vh;
+    margin-top: 120px;
 }
 
 .titulo {
@@ -194,7 +198,7 @@ main {
     max-width: 30%; /* Limita a largura máxima da seção de texto */
     padding: 0px 0px 60px 60px; /* Padding com 60px à esquerda e na parte inferior */
 }
-#text-section h1 {
+#text-section h2 {
     font-size: 24px;
     color: #b84d0b;
     margin: 10px 0;
@@ -329,7 +333,7 @@ main {
         padding: 20px;
     }
 
-    #text-section h1 {
+    #text-section h2 {
         font-size: 22px;
     }
 
@@ -362,7 +366,7 @@ main {
         padding: 10px;
     }
 
-    #text-section h1 {
+    #text-section h2 {
         font-size: 20px;
     }
 

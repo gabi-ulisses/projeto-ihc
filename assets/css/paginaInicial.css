@@ -10,11 +10,13 @@ main {
     align-items: flex-start;
     padding: 0% 5%;    
     display: flex;
-
+    min-height: 50vh;
+    margin-top: 120px;
 }
 
 section h1 {
     text-align: center;
+    
 }
 
 /* Seção principal */
