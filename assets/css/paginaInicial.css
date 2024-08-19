@@ -11,7 +11,8 @@ main {
     padding: 0% 5%;    
     display: flex;
     min-height: 50vh;
-    margin-top: 120px;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 section h1 {
@@ -135,12 +136,12 @@ nav ul .liPrincipal:hover {
 }
 
 nav ul li a {
-    color: #EF6F20;
+    color: #030860;
     text-decoration: none;
 }
 
 #li_icon1, #li_icon2 {
-    background-color: #152576;
+    background-color: #e7e7e8;
     border-radius: 100%;
     text-align: center;
 }
@@ -207,7 +208,7 @@ nav ul li a {
 
 footer{
     background-color: #ffffff;
-    color: #EF6F20;
+    color: #02114f;
     text-align: center;
     padding: 10px;
     position: relative;
@@ -227,7 +228,7 @@ footer{
   }
 
   footer a{
-    color: #EF6F20;
+    color: #02114f;
     text-decoration: none;
   }
 
